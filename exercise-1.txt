@@ -1,0 +1,88 @@
+Pseudocode Challenge
+
+1. Newton Second Law
+	a. Algoritma :
+		1. Menentukan persamaan resultan gaya pada mobil 
+		2. Menentukan massa mobil, sebesar 600 kg
+		3. Menentukan besar percepatan pada mobil, sebesar 2 m/s2
+		4. Menghitung resultan gaya dengan memasukkan variabel massa mobil dan percepatan pada persamaan resultan gaya
+		5. Mendapatkan hasil nilai besar resultan gaya
+
+	b. Pseudocode
+		SAVE massa-mobil= 600;
+		SAVE percepatan-mobil = 2;
+		SAVE F = massa-mobil*percepatan-mobil;
+		SHOW F;
+
+
+2. Tahun Kabisat
+	a. Algoritma
+		1. Membaca tahun yang ingin diketahui
+		2. Tahun yang ingin diketahui dibagi 4 dan 100
+		3. Jika tahun tidak habis dibagi 4, hasilnya tahun tersebut bukan tahun kabisat
+		4. Jika habis dibagi 4 dan tidak habis dibagi 100, hasilnya tahun tersebut adalah tahun kabisat
+		5. Jika habis dibagi 4, habis dibagi 100, dan habis dibagi 400, berarti tahun kabisat
+		6. Jika habis dibagi 4, habis dibagi 100, dan tidak habis dibagi 400, berarti bukan tahun kabisat
+		
+
+	b. Pseudocode
+		READ and SAVE tahun;
+		SAVE a1_tahun = tahun%4;
+		SAVE a2_tahun = tahun%100;
+		SAVE a3_tahun = tahun%400;
+
+		IF a1_tahun = 0 {
+
+			IF a2_tahun = 0 {
+
+				IF a3_tahun = 0 {
+
+					hasil = "tahun kabisat";
+
+				} ELSE hasil = "bukan tahun kabisat";
+
+			} ELSE hasil = "tahun kabisat";
+
+		} ELSE hasil = "bukan tahun kabisat";
+
+		SHOW hasil;
+
+
+3. Laundry Day
+	a. Algoritma
+		1. Memasukkan pakaian ke mesin cuci dan menghitungnya
+		2. Jika baju yang dimasukkan belum berjumlah 20 potong, tambah baju
+		3. Jika baju yang dimasukkan sudah mencapai 20 pootong, nyalakan mesin cuci
+
+	b. Pseudocode
+		SAVE baju = 0;
+		FOR baju < 20 {
+			baju++;
+		}
+
+		SHOW "Baju sudah mencapai 20 potong, nyalakan mesin cuci";
+
+
+4. Periksa Kuku
+	a. Algoritma
+		1. Guru memeriksa panjang kuku siswa pertama
+		2. Jika kuku siswa tersebut panjang, guru akan memberikan hukuman
+		3. Jika kuku siswa tersebut pendek, guru akan memberikan pujian
+		4. Guru melakukan kembali langkah 1 sampai 3 kepada siswa selanjutnya hingga sampai siswa ke 40
+
+
+	b. Pseudocode
+		READ and SAVE "kuku_panjang"
+		SAVE "siswa" as 0
+
+		WHILE "siswa" less than 40 
+			ADD "siswa" by 1
+			IF "kuku_panjang" equals to true 
+				hasil = "Guru menghukum siswa ke"+siswa;
+
+			} ELSE hasil = "Guru memuji siswa ke"+siswa;
+
+			DISPLAY hasil;
+		}
+
+
