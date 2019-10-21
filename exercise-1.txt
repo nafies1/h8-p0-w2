@@ -9,10 +9,11 @@ Pseudocode Challenge
 		5. Mendapatkan hasil nilai besar resultan gaya
 
 	b. Pseudocode
-		SAVE massa-mobil= 600;
-		SAVE percepatan-mobil = 2;
-		SAVE F = massa-mobil*percepatan-mobil;
-		SHOW F;
+		SAVE "massa-mobil" as 600
+		SAVE "percepatan-mobil" as 2
+		CALCULATE "massa-mobil" multiplied by "percepatan-mobil"
+		SAVE "result" as the result of calculation
+		DISPLAY "result"
 
 
 2. Tahun Kabisat
@@ -26,26 +27,22 @@ Pseudocode Challenge
 		
 
 	b. Pseudocode
-		READ and SAVE tahun;
-		SAVE a1_tahun = tahun%4;
-		SAVE a2_tahun = tahun%100;
-		SAVE a3_tahun = tahun%400;
+		READ and SAVE "tahun"
+		SAVE "result1" as "tahun" mod 4
+		SAVE "result2" as "tahun" mod 100
+		SAVE "result3" as "tahun" mod 400
 
-		IF a1_tahun = 0 {
+		IF "result1" equals to 0 
+			IF "result2" equals to 0 
+				IF "result3" equals to 0
+					SET hasil with "tahun kabisat"
+				ELSE 
+					SET hasil with "bukan tahun kabisat"
+			ELSE 
+				SET hasil with "tahun kabisat"
+		ELSE 
+			SET "hasil" with "bukan tahun kabisat"
 
-			IF a2_tahun = 0 {
-
-				IF a3_tahun = 0 {
-
-					hasil = "tahun kabisat";
-
-				} ELSE hasil = "bukan tahun kabisat";
-
-			} ELSE hasil = "tahun kabisat";
-
-		} ELSE hasil = "bukan tahun kabisat";
-
-		SHOW hasil;
 
 
 3. Laundry Day
@@ -55,12 +52,12 @@ Pseudocode Challenge
 		3. Jika baju yang dimasukkan sudah mencapai 20 pootong, nyalakan mesin cuci
 
 	b. Pseudocode
-		SAVE baju = 0;
-		FOR baju < 20 {
-			baju++;
-		}
+		SAVE "baju" as 0
 
-		SHOW "Baju sudah mencapai 20 potong, nyalakan mesin cuci";
+		FOR "baju" less than 20 
+			Add "baju" by 1
+		
+		DISPLAY "Baju sudah mencapai 20 potong, nyalakan mesin cuci"
 
 
 4. Periksa Kuku
@@ -78,11 +75,11 @@ Pseudocode Challenge
 		WHILE "siswa" less than 40 
 			ADD "siswa" by 1
 			IF "kuku_panjang" equals to true 
-				hasil = "Guru menghukum siswa ke"+siswa;
+				SET "hasil" with "Guru menghukum siswa tersebut"
 
-			} ELSE hasil = "Guru memuji siswa ke"+siswa;
+			ELSE SET "hasil" with "Guru memuji siswa tersebut"
 
-			DISPLAY hasil;
-		}
+			DISPLAY hasil
+		
 
 
