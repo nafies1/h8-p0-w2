@@ -1,6 +1,11 @@
 // [Exercises 10] Bandingkan Angka
 
 function bandingkanAngka(angka1, angka2) {
+	if (angka1==angka2) {
+		return -1;
+	} else {
+		return angka1 < angka2;
+	}
   // you can only write your code here!
 }
 
