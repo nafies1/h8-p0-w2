@@ -38,11 +38,13 @@ Pseudocode Challenge
 					SET hasil with "tahun kabisat"
 				ELSE 
 					SET hasil with "bukan tahun kabisat"
+				END IF
 			ELSE 
 				SET hasil with "tahun kabisat"
+			END IF
 		ELSE 
 			SET "hasil" with "bukan tahun kabisat"
-
+		END IF
 
 
 3. Laundry Day
@@ -56,6 +58,7 @@ Pseudocode Challenge
 
 		FOR "baju" less than 20 
 			Add "baju" by 1
+		END FOR
 		
 		DISPLAY "Baju sudah mencapai 20 potong, nyalakan mesin cuci"
 
@@ -73,13 +76,16 @@ Pseudocode Challenge
 		SAVE "siswa" as 0
 
 		WHILE "siswa" less than 40 
-			ADD "siswa" by 1
+			
 			IF "kuku_panjang" equals to true 
 				SET "hasil" with "Guru menghukum siswa tersebut"
 
-			ELSE SET "hasil" with "Guru memuji siswa tersebut"
-
+			ELSE 
+				SET "hasil" with "Guru memuji siswa tersebut"
+			END IF
 			DISPLAY hasil
+			ADD "siswa" by 1
+		END WHILE
 		
 
 
