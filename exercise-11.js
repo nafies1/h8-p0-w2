@@ -1,7 +1,13 @@
 // [Exercises 11] Balik Kata
 
 function balikKata(kata) {
+	var index = kata.length - 1;
+	var letter = '';
+	for (i=index; i >= 0; i--){
+		letter += kata[i];
   // you can only write your code here!
+	}
+	return letter ;
 }
 
 // TEST CASES
