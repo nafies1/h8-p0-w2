@@ -2,6 +2,14 @@
 
 function konversiMenit(menit) {
   // you can only write your code here!
+  var jam = Math.floor(menit/60);
+  var min = menit%60;
+  min += '';
+  if (min.length == 1){
+  	min = '0'+ min;
+  }
+  var waktu = jam + ':' + min;
+  return waktu ;
 }
 
 // TEST CASES
